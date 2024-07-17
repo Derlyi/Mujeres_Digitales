@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidebar With Bootstrap</title>
+    <title>Mujeres Digitales</title>
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -26,7 +26,7 @@
             <ul class="sidebar-nav">
                 <li class="sidebar-item">
                     <a href="Manzanas.html" class="sidebar-link">
-                        <i class="lni lni-user"></i>
+                        <i class="lni lni-control-panel"></i>
                         <span>Manzanas</span>
                     </a>
                 </li>
@@ -47,7 +47,19 @@
                 <li class="sidebar-item">
                     <a href="Registro_mujer_cuidadora.html" class="sidebar-link">
                         <i class="lni lni-control-panel"></i>
-                        <span>Registro-Cuidadora</span>
+                        <span>Asistencia Cuidadora</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="Registro_Mujeres.html" class="sidebar-link">
+                        <i class="lni lni-agenda"></i>
+                        <span>Registro Mujeres</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="Reportes.html" class="sidebar-link">
+                        <i class="lni lni-popup"></i>
+                        <span>Reportes</span>
                     </a>
                 </li>
             </ul>
@@ -82,6 +94,10 @@
                             <th scope="col">Nombre</th>
                             <th scope="col">Imagen</th>
                             <th scope="col">Descripción</th>
+                            <th scope="col">Establecimiento</th>
+                            <th scope="col">Imagen</th>
+                            <th scope="col">Responsable</th>
+                            <th scope="col">Dirección</th>
                             <th scope="col">Seleccionar</th>
                         </tr>
                     </thead>
@@ -90,11 +106,14 @@
                     <tbody class="table-group-divider">
                         <tr>
                             <td scope="row">101</td>
-                            <td>Airpods</td>
-                            <td><img style="width: 70px;" src="img/airpodspro.webp" alt="audifonos">
+                            <td>Gym</td>
+                            <td><img style="width: 70px; height: 50px;" src="img/gym.jpg" alt="gym">
                             </td>
-                            <td>Los AirPods brindan una experiencia inalámbrica inigualable, con fácil configuración y
-                                audio de alta calidad.</td>
+                            <td>Ejercicio Físico de alta calidad.</td>
+                            <td>Manzana 1</td>
+                            <td><img style="width: 70px; height: 50px;" src="img/catedral.jpg" alt="catedral">
+                            <td>Danna Cadena</td>
+                            <td>Calle 3A-No.17A-35</td>
                             <td>
                                 <div class="mb-3 form-check text-bg-">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -104,10 +123,13 @@
                         </tr>
                         <tr>
                             <td scope="row">102</td>
-                            <td>Iphone</td>
-                            <td><img style="width: 70px;" src="img/iphone.png" alt="iphone"></td>
-                            <td>Sistema de dos cámaras. Chip A15 Bionic superrápido. Batería para todo el día. Diseño
-                                resistente.</td>
+                            <td>Psicologia</td>
+                            <td><img style="width: 70px; height: 50px;" src="img/psicologica.jpg" alt="Psicologia"></td>
+                            <td>Orientación Psicológica gratuita.</td>
+                            <td>Manzana 2</td>
+                            <td><img style="width: 70px; height: 50px;" src="img/sena.jpg" alt="sena">
+                            <td>Liliana Suarez</td>
+                            <td>Cra.5 No.10-30</td>
                             <td>
                                 <div class="mb-3 form-check text-bg-">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -117,10 +139,13 @@
                         </tr>
                         <tr>
                             <td scope="row">103</td>
-                            <td>Proyector</td>
-                            <td><img style="width: 70px;" src="img/Proyector.webp" alt="Proyector"></td>
-                            <td>El miniproyector portátil Hy300 Android 4k Wifi Bluetooth Smart White Color 110v/220v.
-                                Ideal para cualquier ambiente.</td>
+                            <td>Lavanderia</td>
+                            <td><img style="width: 70px; height: 50px;" src="img/lav1.avif" alt="lavandería"></td>
+                            <td>Lavanderías comunitarias para sus familias.</td>
+                            <td>Manzana 3</td>
+                            <td><img style="width: 70px; height: 50px;" src="img/cuadra.jpg" alt="cuadra">
+                            <td>Laura Muñoz</td>
+                            <td>Cra.2 No.5-40</td>
                             <td>
                                 <div class="mb-3 form-check text-bg-">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -132,8 +157,25 @@
                 </table>
                 <div>
 
-                    <!-- Boton eliminar -->
-                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                     <!-- Boton eliminar -->
+                     <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                     data-bs-target="#exampleModal6">Eliminar</button>
+
+          <!--Modal eliminar-->
+          <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content d-flex justify-content-center align-items-center">
+                  <p class="fw-bold m-2">Eliminar</p><br>
+                  <p>¿Está seguro que desea Eliminar la información?</p>
+                  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Si</button>
+                    <button type="button" class="btn btn-secondary">No</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!--Modal eliminar-->
 
                     <!-- Boton actualizar -->
                     <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
@@ -147,7 +189,7 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Actualización de Datos
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Actualización de Servicios
                                     </h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
@@ -175,13 +217,33 @@
                                         <input type="email" class="form-control" id="exampleFormControlInput1"
                                             placeholder="">
                                     </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Establecimiento</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="input-group mb-3">
+                                            <input type="file" class="form-control" id="inputGroupFile02">
+                                            <label class="input-group-text" for="inputGroupFile02">Imagen</label>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Responsable</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Dirección</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="">
+                                    </div>
 
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                        <a href="Servicios.html" type="button" class="btn btn-primary">Actualizar</a>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <a href="Modulo_Productos.html" type="button" class="btn btn-primary">Actualizar</a>
                             </div>
                         </div>
                     </div>
@@ -198,7 +260,7 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel3">Registro de Informacion
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel3">Registro de Servicios
                                     </h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
@@ -226,210 +288,33 @@
                                         <input type="email" class="form-control" id="exampleFormControlInput1"
                                             placeholder="">
                                     </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Establecimiento</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="input-group mb-3">
+                                            <input type="file" class="form-control" id="inputGroupFile02">
+                                            <label class="input-group-text" for="inputGroupFile02">Imagen</label>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Responsable</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Dirección</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="">
+                                    </div>
 
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                        <a href="Servicios.html" type="button" class="btn btn-success">Registrar</a>
+                                    </div>
 
-                                    <!-- Módulo de Productos Buscador -->
-                                    <div class="main p-3">
-                                        <nav class="navbar bg-body-tertiary">
-                                            <div class="container-fluid">
-                                                <a class="navbar-brand">
-                                                    <h1><strong>Categorías de Servicios</strong></h1>
-                                                </a>
-                                                <form class="d-flex" role="search">
-                                                    <input class="form-control me-2" type="search"
-                                                        placeholder="Busca Aquí" aria-label="Search">
-                                                    <button class="btn btn-danger" type="submit">Buscar</button>
-                                                </form>
-                                            </div>
-                                        </nav>
-
-                                        <!-- Tabla -->
-                                        <div class="table-responsive py-5">
-                                            <table class="table text-center">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col">Código</th>
-                                                        <th scope="col">Nombre</th>
-                                                        <th scope="col">Imagen</th>
-                                                        <th scope="col">Descripción</th>
-                                                        <th scope="col">Seleccionar</th>
-                                                    </tr>
-                                                </thead>
-
-                                                <!-- Información de la Tabla -->
-                                                <tbody class="table-group-divider">
-                                                    <tr>
-                                                        <td scope="row">101</td>
-                                                        <td>Airpods</td>
-                                                        <td><img style="width: 70px;" src="img/airpodspro.webp"
-                                                                alt="audifonos">
-                                                        </td>
-                                                        <td>Los AirPods brindan una experiencia inalámbrica inigualable,
-                                                            con fácil configuración y audio de alta calidad.</td>
-                                                        <td>
-                                                            <div class="mb-3 form-check text-bg-">
-                                                                <input type="checkbox" class="form-check-input"
-                                                                    id="exampleCheck1">
-                                                                <label class="form-check-label"
-                                                                    for="exampleCheck1"></label>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td scope="row">102</td>
-                                                        <td>Iphone</td>
-                                                        <td><img style="width: 70px;" src="img/iphone.png" alt="iphone">
-                                                        </td>
-                                                        <td>Sistema de dos cámaras. Chip A15 Bionic superrápido. Batería
-                                                            para todo el día. Diseño resistente.</td>
-                                                        <td>
-                                                            <div class="mb-3 form-check text-bg-">
-                                                                <input type="checkbox" class="form-check-input"
-                                                                    id="exampleCheck1">
-                                                                <label class="form-check-label"
-                                                                    for="exampleCheck1"></label>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td scope="row">103</td>
-                                                        <td>Proyector</td>
-                                                        <td><img style="width: 70px;" src="img/Proyector.webp"
-                                                                alt="Proyector"></td>
-                                                        <td>El miniproyector portátil Hy300 Android 4k Wifi Bluetooth
-                                                            Smart White Color 110v/220v. Ideal para cualquier ambiente.
-                                                        </td>
-                                                        <td>
-                                                            <div class="mb-3 form-check text-bg-">
-                                                                <input type="checkbox" class="form-check-input"
-                                                                    id="exampleCheck1">
-                                                                <label class="form-check-label"
-                                                                    for="exampleCheck1"></label>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <div>
-
-                                                <!-- Boton eliminar -->
-                                                <button type="submit" class="btn btn-danger">Eliminar</button>
-
-                                                <!-- Boton actualizar -->
-                                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                                                    data-bs-target="#exampleModal">
-                                                    Actualizar
-                                                </button>
-
-                                                <!-- Formulario de actualizacion -->
-                                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h1 class="modal-title fs-5" id="exampleModalLabel">
-                                                                    Actualización de Datos
-                                                                </h1>
-                                                                <button type="button" class="btn-close"
-                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
-                                                            </div>
-                                                            <div class="modal-body">
-                                                                <div class="mb-3">
-                                                                    <label for="exampleFormControlInput1"
-                                                                        class="form-label">Código</label>
-                                                                    <input type="email" class="form-control"
-                                                                        id="exampleFormControlInput1" placeholder="">
-                                                                </div>
-                                                                <div class="mb-3">
-                                                                    <label for="exampleFormControlInput1"
-                                                                        class="form-label">Nombre</label>
-                                                                    <input type="email" class="form-control"
-                                                                        id="exampleFormControlInput1" placeholder="">
-                                                                </div>
-                                                                <div class="mb-3">
-                                                                    <div class="input-group mb-3">
-                                                                        <input type="file" class="form-control"
-                                                                            id="inputGroupFile02">
-                                                                        <label class="input-group-text"
-                                                                            for="inputGroupFile02">Imagen</label>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="mb-3">
-                                                                    <label for="exampleFormControlInput1"
-                                                                        class="form-label">Drescripción</label>
-                                                                    <input type="email" class="form-control"
-                                                                        id="exampleFormControlInput1" placeholder="">
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary"
-                                                                data-bs-dismiss="modal">Cerrar</button>
-                                                            <a href="Modulo_Productos.html" type="button"
-                                                                class="btn btn-primary">Actualizar</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <!-- Boton de registro -->
-                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
-                                                    data-bs-target="#exampleModal3">
-                                                    Registrar
-                                                </button>
-
-                                                <!-- Formulario de registro -->
-                                                <div class="modal fade" id="exampleModal3" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h1 class="modal-title fs-5" id="exampleModalLabel3">
-                                                                    Registro de Informacion
-                                                                </h1>
-                                                                <button type="button" class="btn-close"
-                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
-                                                            </div>
-                                                            <div class="modal-body">
-                                                                <div class="mb-3">
-                                                                    <label for="exampleFormControlInput1"
-                                                                        class="form-label">Código</label>
-                                                                    <input type="email" class="form-control"
-                                                                        id="exampleFormControlInput1" placeholder="">
-                                                                </div>
-                                                                <div class="mb-3">
-                                                                    <label for="exampleFormControlInput1"
-                                                                        class="form-label">Nombre</label>
-                                                                    <input type="email" class="form-control"
-                                                                        id="exampleFormControlInput1" placeholder="">
-                                                                </div>
-                                                                <div class="mb-3">
-                                                                    <div class="input-group mb-3">
-                                                                        <input type="file" class="form-control"
-                                                                            id="inputGroupFile02">
-                                                                        <label class="input-group-text"
-                                                                            for="inputGroupFile02">Imagen</label>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="mb-3">
-                                                                    <label for="exampleFormControlInput1"
-                                                                        class="form-label">Drescripción</label>
-                                                                    <input type="email" class="form-control"
-                                                                        id="exampleFormControlInput1" placeholder="">
-                                                                </div>
-
-
-                                                            </div>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary"
-                                                                data-bs-dismiss="modal">Cerrar</button>
-                                                            <a href="Modulo_Productos.html" type="button"
-                                                                class="btn btn-success">Registrar</a>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>

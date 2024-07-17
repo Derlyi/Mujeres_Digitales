@@ -77,7 +77,7 @@
         <div class="main p-3">
             <nav class="navbar bg-body-tertiary">
                 <div class="container-fluid">
-                  <a class="navbar-brand"><h1><strong>Registro de Asistencia de Mujer Cuidadora</strong></h1></a>
+                  <a class="navbar-brand"><h1><strong>Registro de Mujeres Amas de Casa</strong></h1></a>
                   <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Busca Aquí" aria-label="Search">
                     <button class="btn btn-danger" type="submit">Buscar</button>
@@ -99,10 +99,9 @@
                                 <th scope="col">Email</th>
                                 <th scope="col">Ciudad</th>
                                 <th scope="col">Dirección</th>
-                                <th scope="col">Manzana</th>
-                                <th scope="col">Servicio</th>
-                                <th scope="col">Fecha</th>
-                                <th scope="col">Hora</th>
+                                <th scope="col">Ocupación</th>
+                                <th scope="col">Servicio de Interés</th>
+                                <th scope="col">Contraseña</th>
                                 <th scope="col">Seleccionar</th>
                             </tr>
                         </thead>
@@ -110,17 +109,16 @@
                         <!-- Información de las Tablas -->
                         <tbody class="table-group-divider">
                             <tr>
-                                <td scope="row">1077858590</td>
-                                <td>Danna</td>
-                                <td>Cadena</td>
+                                <td scope="row">1077858588</td>
+                                <td>Mariana</td>
+                                <td>Rojas</td>
                                 <td>3105874563</td>
-                                <td>danna@gmail.com</td>
+                                <td>mariana@gmail.com</td>
                                 <td>Garzón</td>
                                 <td>Calle 3A-No.17A-35</td>
-                                <td>1</td>
-                                <td>Gym</td>
-                                <td>10 de Julio</td>
-                                <td>9:00 AM</td>
+                                <td>Ama de casa</td>
+                                <td>Ejercicio Físico</td>
+                                <td>Mariana123</td>
                                 <td>
                                     <div class="mb-3 form-check text-bg">
                                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -130,16 +128,15 @@
                             </tr>
                             <tr>
                                 <td scope="row">1077840567</td>
-                                <td>Liliana</td>
-                                <td>Suarez</td>
+                                <td>Catalina</td>
+                                <td>Cortez</td>
                                 <td>3217136532</td>
-                                <td>liliana@gmail.com</td>
+                                <td>catalina@gmail.com</td>
                                 <td>Gigante</td>
                                 <td>Cra.5 No.10-30</td>
-                                <td>2</td>
+                                <td>Ama de casa</td>
                                 <td>Psicología</td>
-                                <td>12 de Julio</td>
-                                <td>10:00 AM</td>
+                                <td>Cata90901</td>
                                 <td>
                                     <div class="mb-3 form-check">
                                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -149,16 +146,15 @@
                             </tr>
                             <tr>
                                 <td scope="row">1077848476</td>
-                                <td>Laura</td>
-                                <td>Muñoz</td>
+                                <td>Juliana</td>
+                                <td>Ocampo</td>
                                 <td>3133825360</td>
-                                <td>laura@gmail.com</td>
+                                <td>juliana@gmail.com</td>
                                 <td>Tarqui</td>
                                 <td>Cra.2 No.5-40</td>
-                                <td>3</td>
+                                <td>Ama de casa</td>
                                 <td>Lavandería</td>
-                                <td>14 de Julio</td>
-                                <td>11:00 AM</td>
+                                <td>Juliana55</td>
                                 <td>
                                     <div class="mb-3 form-check">
                                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -202,7 +198,7 @@
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Registro de Asistencia de Mujer Cuidadora</h1>
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Registro de Usuario</h1>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
@@ -236,27 +232,31 @@
                                             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
                                           </div>
                                           <div class="mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label">Manzana</label>
+                                            <label for="exampleFormControlInput1" class="form-label">Ocupación</label>
                                             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
                                           </div>
                                           <div class="mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label">Servicio</label>
+                                            <label for="exampleFormControlInput1" class="form-label">Servicio de Interés</label>
                                             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
                                           </div>
-                                          <div class="mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label">Fecha</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                                          <div class="row g-3 align-items-center">
+                                            <div class="col-auto">
+                                              <label for="inputPassword6" class="col-form-label">Contraseña</label>
+                                            </div>
+                                            <div class="col-auto">
+                                              <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                                            </div>
+                                            <div class="col-auto">
+                                              <span id="passwordHelpInline" class="form-text">
+                                                Debe contener minimo 8-20 caracteres con combinaciones de letras, números y signos.
+                                              </span>
+                                            </div>
                                           </div>
-                                          <div class="mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label">Hora</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-                                          </div>
-                                          
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
                                             data-bs-dismiss="modal">Cerrar</button>
-                                        <a href="Registro_mujer_cuidadora.html" type="button" class="btn btn-danger">Registrar</a>
+                                        <a href="Registro_Mujeres.html" type="button" class="btn btn-danger">Registrar</a>
                                     </div>
                                 </div>
                             </div>
@@ -308,27 +308,31 @@
                                             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
                                           </div>
                                           <div class="mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label">Manzana</label>
+                                            <label for="exampleFormControlInput1" class="form-label">Ocupación</label>
                                             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
                                           </div>
                                           <div class="mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label">Servicio</label>
+                                            <label for="exampleFormControlInput1" class="form-label">Servicio de Interés</label>
                                             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
                                           </div>
-                                          <div class="mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label">Fecha</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-                                          </div>
-                                          <div class="mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label">Hora</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-                                          </div>
-                                          
+                                         <div class="row g-3 align-items-center">
+                                           <div class="col-auto">
+                                             <label for="inputPassword6" class="col-form-label">Contraseña</label>
+                                           </div>
+                                           <div class="col-auto">
+                                             <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                                           </div>
+                                           <div class="col-auto">
+                                             <span id="passwordHelpInline" class="form-text">
+                                               Debe contener minimo 8-20 caracteres con combinaciones de letras, números y signos..
+                                             </span>
+                                           </div>
+                                         </div>
                                    </div>
                                    <div class="modal-footer">
                                        <button type="button" class="btn btn-secondary"
                                            data-bs-dismiss="modal">Cerrar</button>
-                                       <a href="Modulo_Usuarios.html" type="button" class="btn btn-success">Actualizar</a>
+                                       <a href="Registro_Mujeres.html" type="button" class="btn btn-success">Actualizar</a>
                                    </div>
                                </div>
                            </div>

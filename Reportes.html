@@ -76,26 +76,86 @@
         <div class="main p-3">
             <div class="text-center">
                 <h1>
-                    BIENVENIDOS
+                    Reportes
                 </h1>
                  <!-- Fin Menu -->
 
 
-                  <!-- principal -->
+                  <!-- informacion -->
                   <div class="card mb-3">
                     <div class="card-body">
-                      <h3 class="card-title"><STrong>MANZANAS DEL CUIDADO</STrong></h3>
-                      <p class="card-text">Las Manzanas del Cuidado son espacios de la ciudad en los que se brinda tiempo y servicios a las
-                        mujeres y a sus familias. En las Manzanas del Cuidado las cuidadoras tienen tiempo y servicios
-                        gratuitos, aquí pueden estudiar, emprender, emplearse, descansar, ejercitarse, recibir orientación
-                        y asesoría jurídica y psicológica, lavar su ropa y la de su familia en lavanderías comunitarias, todo
-                        totalmente gratis. Las Manzanas son áreas de la ciudad en las que se tiene la infraestructura y
-                        servicios para atender de manera próxima y simultánea a las cuidadoras y a sus familias.</p>
-                      <img src="img/logo.svg" class="card-img-top img-fluid" style="width: 500px;" alt="logo">
+                      <h4 class="card-title"><STrong>Información General</STrong></h4>
+                      
+                      <img src="img/estadisticas.png" class="card-img-top img-fluid" style="width: 500px;" alt="reporte">
+
+                    
+                <!-- fin informacion -->
+
+                 <!-- descarga -->
+                  <br><br><br>
+                 <p class="text-center"><strong>Descargar archivo en formato:</strong></p>
+
+                   <!-- Boton excel -->
+                   <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                   data-bs-target="#exampleModal6">Excel</button>
+
+        <!--Modal excel -->
+        <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content d-flex justify-content-center align-items-center">
+                <p class="fw-bold m-2">Excel</p><br>
+                <p>¿Está seguro que desea descargar el reporte en formato de archivo Excel?</p>
+                
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Si</button>
+                  <button type="button" class="btn btn-secondary">No</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!--Modal excel -->
+
+         <!-- Boton pdf -->
+         <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+         data-bs-target="#exampleModal6">PDF</button>
+
+<!--Modal pdf -->
+<div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content d-flex justify-content-center align-items-center">
+      <p class="fw-bold m-2">PDF</p><br>
+      <p>¿Está seguro que desea descargar el reporte en formato de archivo PDF?</p>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Si</button>
+        <button type="button" class="btn btn-secondary">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Modal pdf-->
+
+                         <!-- Boton eliminar -->
+                       <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                       data-bs-target="#exampleModal6">Eliminar</button>
+
+            <!--Modal eliminar-->
+            <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content d-flex justify-content-center align-items-center">
+                    <p class="fw-bold m-2">Eliminar</p><br>
+                    <p>¿Está seguro que desea Eliminar la información?</p>
+                    
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Si</button>
+                      <button type="button" class="btn btn-secondary">No</button>
                     </div>
                   </div>
-                    
-        
+                </div>
+            </div>
+            <!--Modal eliminar-->
+        </div>
+    </div>
             </div>
         </div>
     </div>
